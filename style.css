@@ -28,7 +28,7 @@ input {
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -39,8 +39,8 @@ p {
     background-color: rgb(241, 241, 239);
     padding: 25px 40px;
     border-radius: 10px;
-    box-shadow: 8px 5px 5px rgb(165, 148, 148);
-    border: solid 1px rgb(175, 163, 163);
+    box-shadow: 5px 5px 5px rgb(165, 148, 148);
+    border: solid 3px rgb(109, 105, 105);
 }
 
 .title {
@@ -80,7 +80,7 @@ p {
     height: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
-    border: none;
+    border: solid 2px gray;
     box-shadow: 4px 2px 2px rgb(165, 148, 148);
     cursor: pointer;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ p {
 
 @media (max-width: 425px) {
     .container {
-        padding: 30px 30px 10px 30px;
+        padding: 20px 10px 0px 10px;
     }
     .title {
         margin-top: 0;
@@ -124,8 +124,8 @@ p {
         height: 50px;
     }
     p {
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 600;
     }
     .btn__password {
         height: 35px;
@@ -134,6 +134,6 @@ p {
     }
     .password {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
     }
 }
