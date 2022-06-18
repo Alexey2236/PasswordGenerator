@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(70deg, rgb(0, 255, 170), rgb(243, 152, 167));
+    padding: 25px 25px;
+}
+
+*,
+*::after,
+*::backdrop {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: rgb(241, 241, 239);
+    padding: 25px 40px;
+    border-radius: 10px;
+    box-shadow: 8px 5px 5px rgb(165, 148, 148);
+    border: solid 1px rgb(175, 163, 163);
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.input__wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input__inner {
+    display: flex;
+    align-items: center;
+}
+
+.input__length {
+    height: 30px;
+    width: 150px;
+    border: solid 1px rgb(130, 216, 130);
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.btn__password {
+    background-color: rgb(104, 172, 121);
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: none;
+    box-shadow: 4px 2px 2px rgb(165, 148, 148);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 7px;
+    color: aliceblue;
+}
+
+.create__password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.option__password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    white-space: wrap;
+    margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 30px 30px 10px 30px;
+    }
+    .title {
+        margin-top: 0;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .input__inner {
+        height: 50px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .btn__password {
+        height: 35px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .password {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

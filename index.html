@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Генератор паролей</h1>
+        <h2 class="subtitle">Заполните форму ниже, и нажмите кнопку сгенерировать пароль </h2>
+        <hr>
+        <div class="input__wrapper">
+
+            <div class="input__inner">
+                <label id="input__lovercase">
+                    <input type="checkbox" checked>
+                </label>
+                <p>Строчные буквы</p>
+            </div>
+
+            <div class="input__inner">
+                <label id="input__numbers">
+                    <input  type="checkbox">
+                </label>
+                <p>Цифры</p>
+            </div>
+
+            <div class="input__inner">
+                <label id="input__uppercase">
+                    <input type="checkbox">
+                </label>
+                <p>Заглавные буквы</p>
+            </div>
+
+            <div class="input__inner">
+                <label id="input__symbol">
+                    <input  type="checkbox">
+                </label>
+                <p>Символы</p>
+            </div>
+
+            <div class="input__inner">
+                <select class="input__length">
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+           </select>
+                <p>Длинна пароля</p>
+            </div>
+
+        </div>
+        <div class="create__password">
+            <button class="btn__password">Создать пароль</button>
+        </div>
+        <div class="wrapper__result"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
