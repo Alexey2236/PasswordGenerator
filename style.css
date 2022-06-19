@@ -3,6 +3,9 @@ body {
     font-family: 'Nunito', sans-serif;
     background: rgb(248, 248, 248);
     padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 *,
@@ -33,7 +36,7 @@ p {
 }
 
 .container {
-    max-width: 640px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 0 10px;
     background-color: rgb(241, 241, 239);
@@ -67,12 +70,13 @@ p {
 }
 
 .input__length {
-    height: 30px;
+    height: 35px;
     width: 150px;
-    border: solid 1px rgb(130, 216, 130);
+    border: solid 1px rgb(12, 12, 12);
     font-size: 15px;
     font-weight: 600;
     margin-right: 10px;
+    border-radius: 10px
 }
 
 .btn__password {
@@ -81,12 +85,16 @@ p {
     margin-top: 25px;
     margin-bottom: 25px;
     border: solid 2px gray;
-    box-shadow: 4px 2px 2px rgb(165, 148, 148);
+    box-shadow: 4px 2px 2px rgb(112, 106, 106);
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 900;
     border-radius: 7px;
     color: aliceblue;
+}
+
+.btn__password:active {
+    box-shadow: 1px 1px 1px rgb(112, 106, 106);
 }
 
 .create__password {
@@ -106,6 +114,9 @@ p {
 }
 
 @media (max-width: 425px) {
+    body {
+        padding: 5px 5px;
+    }
     .container {
         padding: 20px 10px 0px 10px;
     }
@@ -126,6 +137,10 @@ p {
     p {
         font-size: 18px;
         font-weight: 600;
+    }
+    .input__length {
+        height: 30px;
+        width: 150px;
     }
     .btn__password {
         height: 35px;
