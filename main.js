@@ -65,7 +65,8 @@ function showPassword() {
     document.querySelector('.wrapper__result').innerHTML = display;
 }
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (e) => {
+    e.preventDefault();
     if (numbers.querySelector('input:checked')) {
         result.push(...numberArray);
     }
