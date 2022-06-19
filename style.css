@@ -91,6 +91,7 @@ p {
     font-weight: 900;
     border-radius: 7px;
     color: aliceblue;
+    outline: none;
 }
 
 .btn__password:active {
